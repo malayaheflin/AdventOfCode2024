@@ -17,10 +17,9 @@ def solution():
                 for i in range(len(data)):
                     testLevel = data.copy()
                     testLevel.pop(i)
-                    print(testLevel)
                     if check_safe(testLevel):
                         numSafe += 1
-                        continue
+                        break
     return numSafe
 
 def check_safe(data):
